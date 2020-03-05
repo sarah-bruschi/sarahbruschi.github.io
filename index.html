@@ -577,18 +577,11 @@
          <div class="row">
             <div class="eight columns">
                <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-               
-<script src="https://www.google.com/recaptcha/api.js?render=_reCAPTCHA_site_key"></script>
-<script>
-grecaptcha.ready(function() {
-    grecaptcha.execute('_reCAPTCHA_site_key_', {action: 'homepage'}).then(function(token) {
-                  (function(){
+               <script type="text/javascript">
+                   (function(){
                       emailjs.init(' user_XbSsZuRrKv5Vog80LXY80');
                    })();
-    });
-});
-</script>
-
+               </script>
                <script type="text/javascript">
                    window.onload = function() {
                        document.getElementById('contactForm').addEventListener('submit', function(event) {
