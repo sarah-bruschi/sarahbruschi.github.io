@@ -30,6 +30,24 @@
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
 
+<!-- email -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+   <script type="text/javascript">
+      (function(){
+         emailjs.init("user_XbSsZuRrKv5Vog80LXY80");
+      })();
+   </script>
+        <script type="text/javascript">
+         window.onload = function() {
+             document.getElementById('contactForm').addEventListener('submit', function(event) {
+                 event.preventDefault();
+                 // generate the contact number value
+                 this.contact_number.value = Math.random() * 100000 | 0;
+                 emailjs.sendForm('contact_service', 'contact_template', this);
+             });
+         }
+     </script>
+
 </head>
 
 <body>
@@ -576,22 +594,7 @@
          </div>
          <div class="row">
             <div class="eight columns">
-               <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
-               <script type="text/javascript">
-                   (function(){
-                      emailjs.init(' user_XbSsZuRrKv5Vog80LXY80');
-                   })();
-               </script>
-               <script type="text/javascript">
-                   window.onload = function() {
-                       document.getElementById('contactForm').addEventListener('submit', function(event) {
-                           event.preventDefault();
-                           // generate the contact number value
-                           this.contact_number.value = Math.random() * 100000 | 0;
-                           emailjs.sendForm('contact_service', 'contact_template', this);
-                       });
-                   }
-               </script>
+          
 
 
 
