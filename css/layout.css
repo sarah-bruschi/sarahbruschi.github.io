@@ -336,16 +336,21 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: css 2s ease;
 }
 .html5 {
-  	width: 50%;
+  	width: 55%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.css {
-  	width: 90%;
-  	-moz-animation: bootstrap 2s ease;
-  	-webkit-animation: bootstrap 2s ease;
+.Bootstrap {
+  	width: 50%;
+  	-moz-animation: Bootstrap 2s ease;
+  	-webkit-animation: Bootstrap 2s ease;
 }
-.html5 {
+.Tableau {
+   width: 50%;
+   -moz-animation: Tableau 2s ease;
+   -webkit-animation: Tableau 2s ease;
+}
+.ColdFusion {
   	width: 90%;
   	-moz-animation: ColdFusion 2s ease;
   	-webkit-animation: ColdFusion 2s ease;
@@ -367,45 +372,54 @@ ul#nav li.current a { color: #F06000; }
 }
 
 
-@-moz-keyframes sql {
-  0%   { width: 0px;  }
-  100% { width: 65%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes bootstrap {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes ColdFusion {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-
-@-moz-keyframes Java {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes C {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes R {
+ @-moz-keyframes sql {
    0%   { width: 0px;  }
-   100% { width: 20%;  }
+   100% { width: 65%;  }
  }
-
-@-webkit-keyframes sql {
+ @-moz-keyframes css {
+   0%   { width: 0px;  }
+   100% { width: 55%;  }
+ }
+ @-moz-keyframes html5 {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+  }
+ @-moz-keyframes jquery {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+ @-moz-keyframes Bootstrap {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+ @-moz-keyframes Tableau {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+  }
+  @-moz-keyframes Plotly {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+  }
+ 
+ @-moz-keyframes ColdFusion {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+ 
+ @-moz-keyframes Java {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+ @-moz-keyframes C {
+   0%   { width: 0px;  }
+   100% { width: 55%;  }
+ }
+ @-moz-keyframes R {
+    0%   { width: 0px;  }
+    100% { width: 20%;  }
+  }
+ 
+  @-webkit-keyframes sql {
    0%   { width: 0px;  }
    100% { width: 65%;  }
  }
@@ -413,23 +427,31 @@ ul#nav li.current a { color: #F06000; }
    0%   { width: 0px;  }
    100% { width: 55%;  }
  }
- @-webkit-keyframes jquery {
-   0%   { width: 0px;  }
-   100% { width: 50%;  }
- }
- @-webkit-keyframes bootstrap {
-   0%   { width: 0px;  }
-   100% { width: 50%;  }
- }
  @-webkit-keyframes html5 {
+    0%   { width: 0px;  }
+    100% { width: 80%;  }
+  }
+  @-webkit-keyframes jquery {
    0%   { width: 0px;  }
-   100% { width: 80%;  }
+   100% { width: 50%;  }
  }
- @-webkit-keyframes ColdFusion {
+ @-webkit-keyframes Bootstrap {
+   0%   { width: 0px;  }
+   100% { width: 50%;  }
+ }
+ @-webkit-keyframes Tableau {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+  }
+  @-webkit-keyframes Plotly {
+    0%   { width: 0px;  }
+    100% { width: 50%;  }
+  }
+ 
+  @-webkit-keyframes ColdFusion {
    0%   { width: 0px;  }
    100% { width: 60%;  }
  }
- 
  @-webkit-keyframes Java {
    0%   { width: 0px;  }
    100% { width: 60%;  }
@@ -439,9 +461,9 @@ ul#nav li.current a { color: #F06000; }
    100% { width: 55%;  }
  }
  @-webkit-keyframes R {
-   0%   { width: 0px;  }
-   100% { width: 20%;  }
- }
+    0%   { width: 0px;  }
+    100% { width: 20%;  }
+  }
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section
