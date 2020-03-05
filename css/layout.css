@@ -342,8 +342,8 @@ ul#nav li.current a { color: #F06000; }
 }
 .jquery {
    width: 55%;
-   -moz-animation: html5 2s ease;
-   -webkit-animation: html5 2s ease;
+   -moz-animation: jquery 2s ease;
+   -webkit-animation: jquery 2s ease;
 }
 .Bootstrap {
   	width: 50%;
