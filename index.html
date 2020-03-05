@@ -591,9 +591,9 @@
                <form action="https://usebasin.com/f/d1bd946d2ecb" method="post" id="contactForm" enctype="multipart/form-data" name="contactForm">
                   
 					<fieldset>
+                  <input type="hidden" name="botty"><input>
                   <div>
                      <label for="contactName">Name <span class="required">*</span></label>
-                     <input type="hidden" name="botty"><input>
 						   <input type="text" value="" size="35" id="contactName" name="contactName">
                   </div>
                   <div>
@@ -614,7 +614,7 @@
                         display: none;
                         }
                         </style>
-                     <button class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">Submit</button>
+                     <button class="g-recaptcha submit" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
