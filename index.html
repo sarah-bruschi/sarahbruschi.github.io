@@ -32,23 +32,6 @@
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.png" >
 
-<!-- email -->
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-   <script type="text/javascript">
-      (function(){
-         emailjs.init("user_XbSsZuRrKv5Vog80LXY80");
-      })();
-   </script>
-        <script type="text/javascript">
-         window.onload = function() {
-             document.getElementById('contactForm').addEventListener('submit', function(event) {
-                 event.preventDefault();
-                 // generate the contact number value
-                 this.contact_number.value = Math.random() * 100000 | 0;
-                 emailjs.sendForm('gmail', 'contact_template', this);
-             });
-         }
-     </script>
 
 </head>
 
@@ -596,13 +579,9 @@
          </div>
          <div class="row">
             <div class="eight columns">
-          
-
-
-
                <!-- form -->
-               <form action="" method="post" id="contactForm" name="contactForm">
-                  <input type="hidden" name="contact_number">
+               <form action="https://usebasin.com/f/d1bd946d2ecb" method="post" id="contactForm" name="contactForm">
+                  
 					<fieldset>
                   <div>
 						   <label for="contactName">Name <span class="required">*</span></label>
@@ -652,31 +631,6 @@
 					   </p>
 
 				   </div>
-
-               <div class="widget widget_tweets">
-
-                  <h4 class="widget-title">Latest Tweets</h4>
-
-                  <ul id="twitter">
-                     <li>
-                        <span>
-                        This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
-                        Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">2 Days Ago</a></b>
-                     </li>
-                     <li>
-                        <span>
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                        eaque ipsa quae ab illo inventore veritatis et quasi
-                        <a href="#">http://t.co/CGIrdxIlI3</a>
-                        </span>
-                        <b><a href="#">3 Days Ago</a></b>
-                     </li>
-                  </ul>
-
-		         </div>
 
             </aside>
 
