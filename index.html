@@ -43,7 +43,7 @@
                  event.preventDefault();
                  // generate the contact number value
                  this.contact_number.value = Math.random() * 100000 | 0;
-                 emailjs.sendForm('contact_service', 'contact_template', this);
+                 emailjs.sendForm('gmail', 'contact_template', this);
              });
          }
      </script>
@@ -619,7 +619,7 @@
                      <textarea cols="50" rows="15" id="contactMessage" name="contactMessage"></textarea>
                   </div>
                   <div>
-                     <button class="submit">Submit</button>
+                     <button class="submit" type="submit" value="Send">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
