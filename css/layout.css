@@ -355,6 +355,12 @@ ul#nav li.current a { color: #F06000; }
    -moz-animation: Tableau 2s ease;
    -webkit-animation: Tableau 2s ease;
 }
+.Plotly {
+   width: 65%;
+   -moz-animation: Plotly 2s ease;
+   -webkit-animation: Plotly 2s ease;
+}
+
 .ColdFusion {
   	width: 70%;
   	-moz-animation: ColdFusion 2s ease;
@@ -371,7 +377,7 @@ ul#nav li.current a { color: #F06000; }
    -webkit-animation: C 2s ease;
 }
 .R {
-   width: 50%;
+   width: 20%;
    -moz-animation: R 2s ease;
    -webkit-animation: R 2s ease;
 }
