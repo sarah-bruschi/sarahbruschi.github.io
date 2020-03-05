@@ -326,19 +326,24 @@ ul#nav li.current a { color: #F06000; }
 }
 
 .sql {
-  	width: 60%;
+  	width: 70%;
   	-moz-animation: sql 2s ease;
   	-webkit-animation: sql 2s ease;
 }
 .css {
-  	width: 55%;
+  	width: 60%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
 .html5 {
-  	width: 55%;
+  	width: 60%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
+}
+.jquery {
+   width: 55%;
+   -moz-animation: html5 2s ease;
+   -webkit-animation: html5 2s ease;
 }
 .Bootstrap {
   	width: 50%;
@@ -346,12 +351,12 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: Bootstrap 2s ease;
 }
 .Tableau {
-   width: 50%;
+   width: 65%;
    -moz-animation: Tableau 2s ease;
    -webkit-animation: Tableau 2s ease;
 }
 .ColdFusion {
-  	width: 90%;
+  	width: 70%;
   	-moz-animation: ColdFusion 2s ease;
   	-webkit-animation: ColdFusion 2s ease;
 }
