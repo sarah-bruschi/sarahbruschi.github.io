@@ -346,21 +346,21 @@ ul#nav li.current a { color: #F06000; }
   	-webkit-animation: bootstrap 2s ease;
 }
 .html5 {
-  	width: 80%;
+  	width: 90%;
   	-moz-animation: ColdFusion 2s ease;
   	-webkit-animation: ColdFusion 2s ease;
 }
-.jquery {
-  	width: 50%;
+.Java {
+  	width: 65%;
   	-moz-animation: Java 2s ease;
   	-webkit-animation: Java 2s ease;
 }
-.jquery {
-   width: 50%;
+.C {
+   width: 65%;
    -moz-animation: C 2s ease;
    -webkit-animation: C 2s ease;
 }
-.jquery {
+.R {
    width: 50%;
    -moz-animation: R 2s ease;
    -webkit-animation: R 2s ease;
