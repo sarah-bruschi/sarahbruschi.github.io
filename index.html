@@ -38,29 +38,8 @@
    <!-- <link rel="manifest" href="/site.webmanifest"> -->
 	<link rel="shortcut icon" href="favicon.ico" >
 
-<!-- Contact Form -->
-   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-   <script type="text/javascript">
-      (function(){
-         emailjs.init("user_XbSsZuRrKv5Vog80LXY80");
-      })();
-   </script>
-   <script type="text/javascript">
-      window.onload = function() {
-         document.getElementById('btnSubmit').addEventListener('click', function(event) {
-            event.preventDefault();
-            // generate the contact number value
-            // this.contact_number.value = Math.random() * 100000 | 0;
-            emailjs.sendForm('default_service', 'template_dw3TK4L6', this);
-         });
-      }
-   </script>
-       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-       <script>
-         function onSubmit(token) {
-           document.getElementById("btnSubmit").click();
-         }
-       </script>
+
+   
 </head>
 
 <body>
@@ -611,11 +590,16 @@
          <div class="row">
             <div class="eight columns">
                <!-- form -->
-               <form action="https://sarah-bruschi.github.io/thanks.html" method="" id="contactForm" enctype="multipart/form-data" name="contactForm">
+               <script>
+                  function onSubmit(token) {
+                  document.getElementById("contactForm").submit();
+                  }
+                  </script>
+
+               <form action="https://usebasin.com/f/d1bd946d2ecb" method="post" id="contactForm" enctype="multipart/form-data" name="contactForm">
                   
 					<fieldset>
                   <input type="hidden" name="botty">
-                  <!-- <input type="hidden" name="contact_number"> -->
                   <div>
                      <label for="contactName">Name <span class="required">*</span></label>
 						   <input type="text" value="" required size="35" id="contactName" name="contactName" >
@@ -638,7 +622,7 @@
                         display: none;
                         }
                         </style>
-                     <button class="g-recaptcha submit" data-sitekey="6LetDeAUAAAAANR7MJZUdqVvetLcmlGHXSZqm_zp" data-callback='onSubmit' data-badge="inline" id="btnSubmit">Submit</button>
+                     <button class="g-recaptcha submit" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
