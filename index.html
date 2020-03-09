@@ -55,6 +55,12 @@
          });
       }
    </script>
+       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+       <script>
+         function onSubmit(token) {
+           document.getElementById("contactForm").submit();
+         }
+       </script>
 </head>
 
 <body>
@@ -632,14 +638,14 @@
                         display: none;
                         }
                         </style>
-                     <button class="g-recaptcha submit" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"  value="submit" data-badge="inline" type="submit">Submit</button>
+                     <button class="g-recaptcha submit" data-sitekey="6LetDeAUAAAAANR7MJZUdqVvetLcmlGHXSZqm_zp" data-callback='onSubmit' value="submit" data-badge="inline" type="submit">Submit</button>
                      <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
                   </div>
 					</fieldset>
 				   </form> <!-- Form End -->
-<!--data-callback='onSubmit'--> 
+
                <!-- contact-warning -->
                <div id="message-warning"> Error boy</div>
                <!-- contact-success -->
