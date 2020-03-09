@@ -51,16 +51,16 @@
             event.preventDefault();
             // generate the contact number value
             this.contact_number.value = Math.random() * 100000 | 0;
-            emailjs.sendForm('gmail', 'contactform', this);
+            emailjs.sendForm('default_service', 'template_dw3TK4L6', this);
          });
       }
    </script>
-       <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+       <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script>
        <script>
          function onSubmit(token) {
            document.getElementById("contactForm").submit();
          }
-       </script>
+       </script> -->
 </head>
 
 <body>
