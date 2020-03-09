@@ -38,7 +38,23 @@
    <!-- <link rel="manifest" href="/site.webmanifest"> -->
 	<link rel="shortcut icon" href="favicon.ico" >
 
-
+<!-- Contact Form -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+   <script type="text/javascript">
+      (function(){
+         emailjs.init("user_XbSsZuRrKv5Vog80LXY80");
+      })();
+   </script>
+   <script type="text/javascript">
+      window.onload = function() {
+         document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate the contact number value
+            this.contact_number.value = Math.random() * 100000 | 0;
+            emailjs.sendForm('gmail', 'contact_template', this);
+         });
+      }
+   </script>
 </head>
 
 <body>
@@ -589,16 +605,11 @@
          <div class="row">
             <div class="eight columns">
                <!-- form -->
-               <script>
-                  function onSubmit(token) {
-                  document.getElementById("contactForm").submit();
-                  }
-                  </script>
-
-               <form action="https://usebasin.com/f/d1bd946d2ecb" method="post" id="contactForm" enctype="multipart/form-data" name="contactForm">
+               <form action="https://sarah-bruschi.github.io/thanks.html" method="post" id="contactForm" enctype="multipart/form-data" name="contactForm">
                   
 					<fieldset>
                   <input type="hidden" name="botty">
+                  <input type="hidden" name="contact_number">
                   <div>
                      <label for="contactName">Name <span class="required">*</span></label>
 						   <input type="text" value="" required size="35" id="contactName" name="contactName" >
